@@ -2,6 +2,7 @@ apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: studentapp-hpa
+  namespace: k8s
   labels:
     app: studentapp-hpa
 spec:
