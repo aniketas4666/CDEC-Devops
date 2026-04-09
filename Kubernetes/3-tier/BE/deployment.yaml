@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: studentapp-container
-          image: andyas2501/k8s-project:latest
+          image: andyas2501/k8s-backend:latest
           ports:
             - containerPort: 8080
           resources:

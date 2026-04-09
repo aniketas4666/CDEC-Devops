@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: studentapp-frontend
+  namespace: k8s
   labels:
     app: studentapp-frontend
 spec:
@@ -12,7 +13,7 @@ spec:
     spec:
       containers:
         - name: studentapp-container
-          image: abhipraydh96/frontend-student:latest
+          image: andyas2501/k8s-frontend:latest
           ports:
             - containerPort: 80
           resources:
